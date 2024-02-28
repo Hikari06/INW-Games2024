@@ -1,34 +1,30 @@
 const prompt = require('prompt-sync')()
-
+   
 function getUserInfo(){
-    let velocidade = prompt("Digite sua velocidade: ")
-    let placa = prompt("Digite sua placa: ")
-
-    return {
-        velocidadeDoUsuario: velocidade,
-        placaDoUsuario: placa
-    }
+    let velocidade = prompt("Digite a velocidade que o carro estava: ");
+ 
+    return velocidade
 }
-
-
-function Velocimêtro(velocidadeInformada=0){
-    if(velocidade * )
-    return velocidadeInformada
+ 
+ 
+function calcMulta(velocidadeInformada=0){
+    let multa = 0;
+    let velocidadeExcedida = 0;
+ 
+ 
+       if(velocidadeInformada > 60){
+        velocidadeExcedida = velocidadeInformada - 60;
+        multa = velocidadeExcedida * 100;
+       }
+ 
+        return multa
 }
-
+ 
 function main(){
-    let UserData = getUserInfo();
-    let velocidade = UserData.velocidadeDoUsuario
-    let placa = UserData.placaDoUsuario
-    let velocidade = Velocimêtro(velocidade, placa)
-
-    if(velocidade < 60){
-        console.log(`Sua velocidade é de ${velocidade}km/h, você não foi multado`)
-
-    }
-    else if(velocidade > 18 && velocidade <23.9){
-        console.log(`Sua velocidade é de ${velocidade}km/h, sua multa e de `)
-
-    }
+    let userData = getUserInfo()
+    let resultado = calcMulta(userData)
+ 
+    console.log(`Sua multa é de ${resultado} reais`)
+ 
 }
 main()
