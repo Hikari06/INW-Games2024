@@ -4,7 +4,7 @@ function Home() {
     console.log(data)
     return ( 
         <main className='bg-primary-claro'>
-            <input type="text" name="busca" id="buscar" placeholder="Digite aqui sua busca " />
+            <input className=' h-10px' type="text" name="busca" id="buscar" placeholder="Digite aqui sua busca " />
             <div className='grid grid-cols-5 gap-10'>
                 {
                     
