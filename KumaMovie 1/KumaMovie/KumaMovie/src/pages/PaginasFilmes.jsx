@@ -1,6 +1,6 @@
-function PaginaFilmes(){
+function PaginasFilmes(){
     return(
         <h1>Pagina Filmes </h1>
     )
 }
-export default PaginaFilmes
+export default PaginasFilmes
