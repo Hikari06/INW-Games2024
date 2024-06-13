@@ -8,6 +8,7 @@ import Filmes from './pages/Filmes.jsx'
 import Sobre from './pages/Sobre.jsx'
 import Contato from './pages/Contato.jsx'
 import Home from './pages/Home.jsx'
+import Home from './pages/PaginasFilmes.jsx'
 
 const router = createBrowserRouter(
   [
