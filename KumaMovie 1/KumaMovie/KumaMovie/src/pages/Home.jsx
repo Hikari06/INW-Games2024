@@ -1,4 +1,5 @@
 import data from '../../articles.json'
+import {Link} from 'react-router-dom';
 
 function Home() {
     console.log(data)
@@ -12,6 +13,7 @@ function Home() {
                     <div className='card flex flex-col items-center' key={filme.title}>
                     <h2 className='text-center'>{filme.title}</h2>
                     <img src={filme.image} alt={filme.title} />
+                    <Link to='./Filmes.jsx'></Link>
 
                     <div className='texto text-center'>
                         {filme.text.map(texto => (
@@ -19,6 +21,8 @@ function Home() {
                         ))}
                     </div>
                     
+
+
                     <div className='tag'>
                         {filme.tags.map(tag => (
                             <span key={tag} className='text-cyan-600 text-center'> {tag} </span>

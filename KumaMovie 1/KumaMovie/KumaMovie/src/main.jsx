@@ -10,6 +10,7 @@ import Contato from './pages/Contato.jsx'
 import Home from './pages/Home.jsx'
 import PaginasFilmes from './pages/PaginasFilmes.jsx'
 
+
 const router = createBrowserRouter(
   [
     {

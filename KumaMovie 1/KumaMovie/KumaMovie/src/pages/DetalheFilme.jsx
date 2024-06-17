@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import {Link} from "react-router-dom"
 
 
-function Filmes() {
+function DetalhesFilmes() {
 
     const [filmes, setFilmes] = useState([])
     const apiKey='api_key=7c572a9f5b3ba776080330d23bb76e1e'
@@ -26,7 +26,7 @@ function Filmes() {
                         <div className="card-filme" key={filmes.id}>
                             <img className=" w-600px h-200px" src={`${urlImg}${filmes.poster_path}`}/>
                             <h1>{filmes.title}</h1>
-                            <Link className="bg-blue-500 " to={`filmes/:${filmes.id}`}>Saber Mais</Link>
+                            <Link className="bg-blue-500 " to={`filme/:${filmes.id}`}>Saber Mais</Link>
                         </div>
             
                     )
@@ -39,4 +39,4 @@ function Filmes() {
      );
 }
 
-export default Filmes ;
+export default DetalhesFilmes;
