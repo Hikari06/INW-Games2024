@@ -4,11 +4,12 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import PageNotFound from './pages/PageNotFound.jsx'
-import Filmes from './pages/Filmes.jsx'
+import Filmes from './pages/Filme.jsx'
 import Sobre from './pages/Sobre.jsx'
 import Contato from './pages/Contato.jsx'
 import Home from './pages/Home.jsx'
 import PaginasFilmes from './pages/PaginasFilmes.jsx'
+import Serie from './pages/Serie.jsx'
 
 
 const router = createBrowserRouter(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
         {path: 'filmes/:id', element: <PaginasFilmes/>},
         {path: "sobre", element: <Sobre/>},
         {path: "contato", element: <Contato/>},
+        {path: "Serie", element: <Serie/>},
         {path: "*", element: <PageNotFound/>}
 
       ]
