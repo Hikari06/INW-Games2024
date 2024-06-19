@@ -19,19 +19,8 @@ function DetalhesFilmes() {
     return ( 
         <>
         <h1>Filmes</h1>
-        <div className="listaFilmes flex flex-row gap-3">
-            {
-                filmes.map(
-                    filmes => (
-                        <div className="card-filme" key={filmes.id}>
-                            <img className=" w-600px h-200px" src={`${urlImg}${filmes.poster_path}`}/>
-                            <h1>{filmes.title}</h1>
-                            <Link className="bg-blue-500 " to={`filme/:${filmes.id}`}>Saber Mais</Link>
-                        </div>
+        <div className="listaFilmes flex flex-row gap-3 w-200 h-100">
             
-                    )
-                )
-            }
            
         </div>
         </>
