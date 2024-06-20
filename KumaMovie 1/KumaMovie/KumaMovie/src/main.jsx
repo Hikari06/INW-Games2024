@@ -10,6 +10,9 @@ import Contato from './pages/Contato.jsx'
 import Home from './pages/Home.jsx'
 import PaginasFilmes from './pages/PaginasFilmes.jsx'
 import Serie from './pages/Serie.jsx'
+import PgPostConteudo from './pages/PgPostConteudo.jsx'
+import DetalheFilme from './pages/DetalheFilme.jsx'
+
 
 
 const router = createBrowserRouter(
@@ -24,6 +27,8 @@ const router = createBrowserRouter(
         {path: "sobre", element: <Sobre/>},
         {path: "contato", element: <Contato/>},
         {path: "Serie", element: <Serie/>},
+        {path: "POST", element: <PgPostConteudo/>},
+        {path: "Detalhe", element: <DetalheFilme/>},
         {path: "*", element: <PageNotFound/>}
 
       ]

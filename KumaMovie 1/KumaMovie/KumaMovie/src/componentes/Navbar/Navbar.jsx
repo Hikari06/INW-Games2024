@@ -8,10 +8,8 @@ function Navbar() {
                 <li><Link to ="filmes"> Filmes</Link></li>
                 <li><Link to ="Serie">Serie</Link></li>
                 <li><Link to ="contato">Contato</Link></li>
-                <li><Link to ="/">Home</Link></li>
-                <li><Link to ="filmes"> Filmes</Link></li>
                 <li><Link to ="sobre">Sobre</Link></li>
-                <li><Link to ="contato">Contato</Link></li>
+                <li><Link to ="POST">PgPostConteudo</Link></li>
             </ul>
         </nav>
      );
