@@ -3,10 +3,12 @@ import Header from "./componentes/Header/Header"
 function App() {
 
   return (
-    <>
+    
+    <main>
      <Header/>
      <Outlet/>
-    </>
+     </main>
+
   )
 }
 
