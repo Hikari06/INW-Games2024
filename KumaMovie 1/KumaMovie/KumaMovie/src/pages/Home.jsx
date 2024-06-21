@@ -2,13 +2,19 @@ import data from '../../articles.json'
 
 function Home() {
     return ( 
-        <>
-            <input type="text" id="buscar" placeholder='Buscar uma notícia' />
+        <main className='bg-primary-claro'>
+            <input
+        type="search"
+        id="default-search"
+        className=" w-xl  h-15 p-4 ps-10 mt-5 mb-5 text-sm text-primary-claro border border-#A79277 rounded-full bg-white border-#A79277"
+        placeholder="Search Mockups, Logos..."
+        required
+        />
+
             <div className='grid grid-cols-5 gap-5'>
             {
                 data.map( (artigo, index) => (
                     <div className='card ' key={index}>
-
                         <h2>{artigo.title}</h2>
                         <img className="mb-2 h-96 w" src={artigo.image} alt={artigo.title} />
                         <div className='tags'>
@@ -26,7 +32,7 @@ function Home() {
                 ))
             }
             </div>
-        </>
+        </main>
     );
 }
 
