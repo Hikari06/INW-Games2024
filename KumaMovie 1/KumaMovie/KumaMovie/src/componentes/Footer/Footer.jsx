@@ -1,33 +1,7 @@
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 
-function PaginasFilmes(){
-
-    const {id} = useParams();
-    const [filmes, setFilmes] = useState([])
-
-    const apiKey='api_key=7c572a9f5b3ba776080330d23bb76e1e'
-    const urlBase = 'https://api.themoviedb.org/3/movie/'
-    const urlImg = 'https://image.tmdb.org/t/p/w342/'
-
-    
-
-
-    useEffect( ()=> {
-        fetch(`${urlBase}${id}?${apiKey}&language=pt-br`)
-        .then(response => response.json())
-        .then(response => setFilmes(response.results))
-        .catch (error => console.log(error))
-    },[])
-
-    return(
-        <>
-        <h1> Detalhes do Filme</h1>
-        <img src={`${urlImg}${filmes.backdrop_path}`}/>
-         <p>{filmes.title}</p>
-         <p>{filmes.overview}</p>
-
-         <footer className="bg-primary-ocre max-w-screen-xl  shadow dark:bg-gray-900 ">
+function Footer(){
+<footer className="bg-primary-ocre max-w-screen-xl  shadow dark:bg-gray-900 ">
     <div className="w-full max-w-screen-xl  p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
                 <img src="../../KumaMovieLogo.png" className="h-20 mr-5 ml-5" />
@@ -51,9 +25,6 @@ function PaginasFilmes(){
         <span className="block text-sm text-white sm:text-center dark:text-white">© 2024 <a href="https://flowbite.com/" className="hover:underline">KumaMovie™</a>. All Rights Reserved.</span>
     </div>
 </footer>
-
-        </>
-    );
 }
 
-export default PaginasFilmes;
+export default Footer

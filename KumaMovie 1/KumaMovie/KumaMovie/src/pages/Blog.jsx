@@ -1,11 +1,12 @@
 import infos from '../../contato.json'
 
+
 function Blog(){
     return (
         <section className="pt-6 pb-6 bg-primary-claro">
             <div className="max-w-screen-xl mx-auto">
                 <div className="space-y-5 sm:text-center sm:max-w-md sm:mx-auto">
-                    <h1 className="text-primary-ocre text-3xl font-extrabold sm:text-4xl">Seus Contatos</h1>
+                    <h1 className="text-primary-ocre text-3xl font-extrabold sm:text-4xl">Comunidade</h1>
                 </div>
             
                 <ul className="grid gap-x-8 gap-y-10 pt-8 w-full">
@@ -17,7 +18,7 @@ function Blog(){
                                     <div className="mt-3 space-y-2">
                                         <span className="block font-extrabold text-primary-ocre text-sm">{items.nome}</span>
                                         <h3 className="text-lg  text-gray-800 duration-150 group-hover:text-primary-ocre font-semibold">{items.status}   </h3>
-                                        <p className="text-primary-ocre text-sm duration-150 group-hover:text-gray-800">{items.total}</p>
+                                        <p className="text-primary-ocre text-sm duration-150 group-hover:text-gray-800">{items.total}</p><p>{items.coment}</p>
                                         <hr className='bg-primary-ocre' />
                                     </div>
                                 </a>

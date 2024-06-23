@@ -1,216 +1,163 @@
 [
     {
-    "title": "Novidades no mundo do cinema",
+    "title": "Homem-Aranha no Aranhaverso",
     "image": ".//public/ara.png",
+    "banner": ".//public/homem-aranhaBanner.jpg",
     "text": [
-    "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-    "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
+    "Miles Morales, novo Homem-Aranha, viaja pelo Aranhaverso com Peter Parker de outra dimensão para enfrentar vilões e descobrir novas realidades."
     ],
     "tags": ["cinema", "podcast"]
+    
     },
     {
-    "title": "Discussões e análises sobre os filmes mais recentes",
+    "title": "Logan",
     "image": ".//public/logan.png",
+    "banner": ".//public/LoganBanner.avif",
     "text": [
-    "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-    "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
+    "Em um futuro distópico, um envelhecido Wolverine cuida do Professor Xavier enquanto luta contra seus próprios demônios e protege uma jovem mutante."
     ],
     "tags": ["cinema", "discord"]
     },
     {
-    "title": "Desafio de criação cinematográfica",
+    "title": "Garfield Fora de Casa",
     "image": ".//public/garfiels.png",
+    "banner": ".//public/BannerGarfield.png",
     "text": [
-    "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-    "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
+    "Garfield, o gato preguiçoso que odeia segundas-feiras e ama lasanha, se depara com uma aventura selvagem ao ar livre!"
     ],
     "tags": ["cinema", "desafio", "criação"]
     },
     {
-        "title": "Novidades no mundo do cinema",
+        "title": "Arcane",
         "image": ".//public/arc.png",
+        "banner": ".//public/ArcaneBanner.jpg",
         "text": [
-        "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-        "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
+        "Miles Morales, novo Homem-Aranha, viaja pelo Aranhaverso com Peter Parker de outra dimensão para enfrentar vilões e descobrir novas realidades."
         ],
         "tags": ["cinema", "podcast"]
         },
         {
-        "title": "Discussões e análises sobre os filmes mais recentes",
+        "title": "Bridgerton",
         "image": "./public/Brid.png",
+        "banner": ".//public/bridBanner.webp",
         "text": [
-        "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-        "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
+        "Miles Morales, novo Homem-Aranha, viaja pelo Aranhaverso com Peter Parker de outra dimensão para enfrentar vilões e descobrir novas realidades."
         ],
         "tags": ["cinema", "discord"]
         },
         {
-        "title": "Desafio de criação cinematográfica",
+        "title": "Linha Direta",
         "image":".//public/L.png",
+        "banner": ".//public/L.jpg",
         "text": [
-        "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-        "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
+        "Miles Morales, novo Homem-Aranha, viaja pelo Aranhaverso com Peter Parker de outra dimensão para enfrentar vilões e descobrir novas realidades."
         ],
         "tags": ["cinema", "desafio", "criação"]
         },
         {
-            "title": "Novidades no mundo do cinema",
+            "title": "Big Brother",
             "image": ".//public/bb.png",
+            "banner": ".//public/bbb23-banner-223-scaled.webp",
             "text": [
-            "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-            "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
+            "Miles Morales, novo Homem-Aranha, viaja pelo Aranhaverso com Peter Parker de outra dimensão para enfrentar vilões e descobrir novas realidades."
             ],
             "tags": ["cinema", "podcast"]
             },
             {
-            "title": "Discussões e análises sobre os filmes mais recentes",
-            "image": ".//public/garfiels.png",
+            "title": "Dungeon Meshi",
+            "image": ".//public/meshi.webp",
+            "banner": ".//public/meshiBanner.jpg",
             "text": [
-            "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-            "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
+            "Miles Morales, novo Homem-Aranha, viaja pelo Aranhaverso com Peter Parker de outra dimensão para enfrentar vilões e descobrir novas realidades."
             ],
             "tags": ["cinema", "discord"]
             },
             {
-            "title": "Desafio de criação cinematográfica",
-            "image": ".//public/garfiels.png",
-            "text": [
-            "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-            "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
-            ],
+            "title": "Meu Casamento Feliz 🌸",
+            "image": ".//public/shiawase.jpg",
+            "banner": ".//meu_casamento_feliz_Banner.webp",
             "tags": ["cinema", "desafio", "criação"]
             },
             {
-                "title": "Novidades no mundo do cinema",
+                "title": "Game of Thrones",
                 "image": ".//public/gm.png",
-                "text": [
-                "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-                "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
-                ],
+                "banner": ".//public/gmBanner.jpg",
                 "tags": ["cinema", "podcast"]
                 },
                 {
-                "title": "Discussões e análises sobre os filmes mais recentes",
-                "image": ".//public/image 1 (1).png",
-                "text": [
-                "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-                "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
-                ],
+                "title": "Rainha das Lágrimas",
+                "image": ".//public/t.png",
+                "banner": ".//public/tBanner.avif",
                 "tags": ["cinema", "discord"]
                 },
                 {
-                "title": "Desafio de criação cinematográfica",
-                "image": ".//public/garfiels.png",
-                "text": [
-                "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-                "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
-                ],
+                "title": "Minnions 4",
+                "image": ".//public/miinion.jpg",
+                "banner": ".//public/Minion.webp",
                 "tags": ["cinema", "desafio", "criação"]
                 },{
-                    "title": "Novidades no mundo do cinema",
-                    "image": ".//public/md.png",
-                    "text": [
-                    "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-                    "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
-                    ],
+                    "title": "Linha Direta",
+                    "image": ".//public/L.png",
+                    "banner": ".//public/L.jpg",
                     "tags": ["cinema", "podcast"]
                     },
                     {
-                    "title": "Discussões e análises sobre os filmes mais recentes",
+                    "title": "Oktoberfest",
                     "image": ".//public/okt.png",
-                    "text": [
-                    "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-                    "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
-                    ],
+                    "banner": ".//public/oktBanner.jpg",
                     "tags": ["cinema", "discord"]
                     },
                     {
-                    "title": "Desafio de criação cinematográfica",
-                    "image": ".//public/garfiels.png",
-                    "text": [
-                    "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-                    "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
-                    ],
+                    "title": "Raya e o Último Dragão",
+                    "image": ".//public/raya.png",
+                    "banner": ".//public/rayaBanner.jpg",
                     "tags": ["cinema", "desafio", "criação"]
                     },
                     {
-                        "title": "Novidades no mundo do cinema",
+                        "title": "Oppenheimer",
                         "image": ".//public/op.png",
-                        "text": [
-                        "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-                        "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
-                        ],
+                        "banner": ".//public/opBanner.jpg",
                         "tags": ["cinema", "podcast"]
                         },
                         {
-                        "title": "Discussões e análises sobre os filmes mais recentes",
-                        "image": ".//public/que.png",
-                        "text": [
-                        "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-                        "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
-                        ],
+                        "title": "S.W.A.T",
+                        "image": ".//public/swat.png",
+                        "banner": ".//public/swatBanner.jpg",
                         "tags": ["cinema", "discord"]
                         },
                         {
-                        "title": "Desafio de criação cinematográfica",
-                        "image": ".//public/garfiels.png",
-                        "text": [
-                        "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-                        "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
-                        ],
+                        "title": "Suzume",
+                        "image": ".//public/Suzume.png",
+                        "banner": ".//public/BannerSuzume.ppg",
                         "tags": ["cinema", "desafio", "criação"]
                         },{
-                            "title": "Novidades no mundo do cinema",
-                            "image": ".//public/raya.png",
-                            "text": [
-                            "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-                            "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
-                            ],
+                            "title": "Quebra Nozes e os Quatro Reinos",
+                            "image": ".//public/que.png",
+                            "banner": ".//public/BannerQuebra.jpg",
                             "tags": ["cinema", "podcast"]
                             },
                             {
-                            "title": "Discussões e análises sobre os filmes mais recentes",
-                            "image": ".//public/Suzume.png",
-                            "text": [
-                            "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-                            "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
-                            ],
+                            "title": "Sweet Tooth",
+                            "image": ".//public/B.jpg",
+                            "banner": ".//public/BBanner.jpg",
                             "tags": ["cinema", "discord"]
                             },
                             {
-                            "title": "Desafio de criação cinematográfica",
-                            "image": ".//public/garfiels.png",
-                            "text": [
-                            "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-                            "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
-                            ],
+                            "title": "Hunter x Hunter",
+                            "image": ".//public/HxH.jpg",
+                            "banner": ".//public/HxHBanner.avif",
                             "tags": ["cinema", "desafio", "criação"]
                             },
                             {
-                                "title": "Novidades no mundo do cinema",
-                                "image": ".//public/swat.png",
-                                "text": [
-                                "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-                                "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
-                                ],
+                                "title": "Pokemón",
+                                "image": ".//public/Poke.jpg",
+                                "banner": ".//public/PokeBanner.webp",
                                 "tags": ["cinema", "podcast"]
                                 },
                                 {
-                                "title": "Discussões e análises sobre os filmes mais recentes",
-                                "image": ".//public/t.png",
-                                "text": [
-                                "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-                                "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
-                                ],
+                                "title": "FullMetal Alchemist Brotherhood",
+                                "image": ".//public/FMA.jpg",
+                                "banner": ".//public/FMABanner.jpg",
                                 "tags": ["cinema", "discord"]
-                                },
-                                {
-                                "title": "Desafio de criação cinematográfica",
-                                "image": ".//public/garfiels.png",
-                                "text": [
-                                "Você tem talento para contar histórias através da lente da câmera? Então o Desafio de Criação Cinematográfica é para você! Participe deste desafio emocionante, onde cineastas aspirantes têm a chance de mostrar seu talento e criatividade.",
-                                "Ao longo de várias semanas, você terá a oportunidade de desenvolver seu próprio curta-metragem, explorando diferentes gêneros, técnicas de filmagem e narrativas. Receba orientação de profissionais do ramo, compartilhe seu progresso com outros cineastas e, no final, tenha seu trabalho avaliado por um júri de especialistas da indústria."
-                                ],
-                                "tags": ["cinema", "desafio", "criação"]
                                 }
     ]

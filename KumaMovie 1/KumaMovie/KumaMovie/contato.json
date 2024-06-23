@@ -1,0 +1,56 @@
+[
+    {
+        "nome": "Fallin",
+        "total": "6 Assistidos",
+        "coment": "Adorei a seleção de filmes clássicos! É incrível encontrar pérolas do cinema que não estão disponíveis em outros lugares. A navegação pelo site é super intuitiva também. Parabéns pela curadoria!",
+        "status": "online"
+    },
+    {
+        "nome": "Senshi",
+        "total": "0 Assistidos",
+        "coment": "Assisti a última recomendação de vocês e fiquei impressionado. O filme tinha uma trama envolvente e ótimos efeitos especiais. Continuem com esse ótimo trabalho de recomendação!",
+        "status": "offline"
+    },
+    {
+        "nome": "Chilchuck",
+        "total": "14 Assistidos",
+        "coment": "O catálogo de séries está sempre atualizado e cheio de opções incríveis. Encontrei minha nova série favorita graças às sugestões do site. Muito obrigada!",
+        "status": "offline"
+    },
+    {
+        "nome": "Namari",
+        "total": "20 Assistidos",
+        "coment": "O site é ótimo, mas senti falta de uma seção dedicada a documentários. Sou apaixonada por esse gênero e adoraria ver uma seleção mais ampla por aqui. Fora isso, tudo perfeito!",
+        "status": "online"
+    },
+    {
+        "nome": "Kiki",
+        "total": "17 Assistidos",
+        "coment": "Excelente plataforma! A qualidade de streaming é impecável, sem travamentos. A quantidade de filmes disponíveis em alta definição me surpreendeu. Recomendo a todos!",
+        "status": "online"
+    },
+    {
+        "nome": "Ivelline",
+        "total": "32 Assistidos",
+        "coment": "Gostei muito do blog de vocês com críticas e análises. As resenhas são bem detalhadas e me ajudam a decidir o que assistir no fim de semana. Continuem escrevendo!",
+        "status": "offline"
+    },
+    {
+        "nome": "Elliot",
+        "total": "23 Assistidos",
+        "coment": "Adoro a diversidade de filmes internacionais. Consegui assistir a muitos filmes asiáticos que sempre tive curiosidade. Ótima iniciativa de trazer filmes de várias partes do mundo.",
+        "status": "online"
+    },
+    {
+        "nome": "Lauren",
+        "total": "22 Assistidos",
+        "coment": "O recurso de criar listas personalizadas é muito útil. Tenho uma lista só com filmes que quero ver e outra com meus favoritos. Isso facilita bastante na hora de escolher um filme.",
+        "status": "oflline"
+    },
+    {
+        "nome": "Laius",
+        "total": "67 Assistidos",
+        "coment": "O site é incrível, mas seria ainda melhor se tivesse mais opções de legendas em diferentes idiomas. Tenho amigos que não falam português e seria ótimo poder assistir aos filmes com eles.",
+        "status": "online"
+    }
+]
