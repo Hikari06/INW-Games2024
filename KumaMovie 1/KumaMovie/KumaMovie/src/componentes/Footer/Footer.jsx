@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom'
 
 function Footer(){
 <footer className="bg-primary-ocre max-w-screen-xl  shadow dark:bg-gray-900 ">

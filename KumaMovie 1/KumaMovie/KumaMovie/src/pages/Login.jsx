@@ -1,27 +1,42 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
 
 function Login() {
-    const [title, setTitle] = useState('');
+    
+  const [name, setName] = useState(""); 
+  const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [coverImage, setCoverImage] = useState(null);
   const [movieFile, setMovieFile] = useState(null);
+  
 
+  
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here
+    alert(`The name you entered was: ${name}`)
   };
 
-  const handleFileChange = (event, setFile) => {
-    setFile(event.target.files[0]);
+  const handleSubmit = (event, setTitle) => {
+    event.preventDefault();
+    alert(`The description you entered was: ${title}`)
+  };
+
+  const handleSubmit = (event, setDescription) => {
+    setDescription();
+    alert(`The description you entered was: ${description}`)
+  };
+
+  const handleFileChange = (event, setMovieFile) => {
+    setMoiveFile(event.target.files[0]);
   };
   
     return (
-<main className='bg-primary-claro'>
+    <main className='bg-primary-claro'>
         
-        <form onSubmit={handleSubmit} className='flex flex-col items-center bg-primary-claro'>
+    <form onSubmit={handleSubmit} className='flex flex-col items-center bg-primary-claro'>
         
 
-<form class="max-w-sm mx-auto">
+    <form class="max-w-sm mx-auto">
     <div class="mb-5">
     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
     <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required />
