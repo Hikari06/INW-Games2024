@@ -18,7 +18,7 @@ function PaginasFilmes(){
         .then(response => response.json())
         .then(response => setFilmes(response.results))
         .catch (error => console.log(error))
-    },[])
+    },)
 
     return(
         <>

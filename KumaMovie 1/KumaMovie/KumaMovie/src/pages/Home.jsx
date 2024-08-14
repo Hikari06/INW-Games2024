@@ -21,6 +21,8 @@ function Home() {
         setCurrentFilmIndex((prevIndex) => (prevIndex + 1) % data.length);
     };
 
+    const [Filmes, setFilmes] = useState([])
+
     useEffect( () => {
 
         fetch('https://api.themoviedb.org/3/movie/popular?api_key=7c572a9f5b3ba776080330d23bb76e1e')
@@ -39,18 +41,18 @@ function Home() {
             <div className="relative w-full h-96 overflow-hidden rounded-lg"> 
                 
                 <div className="absolute inset-0 flex items-center justify-center">
-                    {data.map((filmes, index) => (
+                    {data.map((Filmes, index) => (
                         <div 
                             key={index}
                             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentFilmIndex ? 'opacity-100' : 'opacity-0'}`}
-                            style={{ backgroundImage: `url(${filmes.banner})` }}
+                            style={{ backgroundImage: `url(${Filmes.banner})` }}
                         >
                             
                             {/* Optional: Add content on top of the image */}
                             <div className=''>  
                                 <img src="../../public/Rectangle 25.png" alt="" />
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className='h-15 w-7 absolute left-20'><h2 className="text-primary-ocre font-bold text-4xl text-alight-center text-wrap flex-row">{filmes.title}</h2></div>
+                                <div className='h-15 w-7 absolute left-20'><h2 className="text-primary-ocre font-bold text-4xl text-alight-center text-wrap flex-row">{Filmes.title}</h2></div>
                             </div>
                             </div>
                         </div>
@@ -74,11 +76,11 @@ function Home() {
 
             <div className='grid grid-cols-5 gap-5 mt-10'>
                 {
-                    data.map( (filmes, index) => (
+                    data.map( (Filmes, index) => (
                         <div key={index}>
                             <div className='card flex flex-col  justify-center items-center relative mr-5 ml-5  h-90 w-50 overflow-hidden sm:aspect-h-10 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-100'>
                                 
-                                <div style={{backgroundImage: `url(${filmes.image})`}} src={filmes.image} alt={filmes.title} className=" h-80 group mt-4 w-full rounded-md bg-cover bg-center shadow-lg cursor-pointer">
+                                <div style={{backgroundImage: `url(${Filmes.image})`}} src={Filmes.image} alt={Filmes.title} className=" h-80 group mt-4 w-full rounded-md bg-cover bg-center shadow-lg cursor-pointer">
                                 <div className="flex flex-col-reverse  bg-black justify-center bg-opacity-0 p-4 w-full h-full hover:bg-gradient-to-b from-transparent to-primary-ocre  transition-all duration-1000 text-white">
                                     <Link to='sobre'  className="mt-60 flex flex-col justify-center mr-5 ml-3 h-8 w-40 rounded-xl wrounded-xl bg-primary-ocre text-white opacity-0 group-hover:opacity-100" style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}>
                                     <div className='text-center'>Assista Agora<div/></div></Link> 
@@ -87,28 +89,28 @@ function Home() {
                                 </div>
                                 
                             </div>                            
-                                <h2 className='absolute right-60 text-wrap text-center text-sm font-bold text-primary-ocre'>{filmes.title}</h2>
+                                <h2 className='absolute right-60 text-wrap text-center text-sm font-bold text-primary-ocre'>{Filmes.title}</h2>
                             <div className='tags my-2'>
-                                {filmes.tags.map( (tag, index) => (
+                                {Filmes.tags.map( (tag, index) => (
                                     <span className="bg-primary-ocre p-1 my-1 mr-1 ml-1 rounded-xl" key={index}>{tag}</span>
                                 ))}
                                 </div>
                                 
 
-<div class="flex items-center">
-    <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+<div className="flex items-center">
+    <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
     </svg>
-    <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+    <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
     </svg>
-    <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+    <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
     </svg>
-    <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+    <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0.387-1.575Z"/>
     </svg>
-    <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+    <svg className="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0.387-1.575Z"/>
     </svg>
 </div>
@@ -153,7 +155,7 @@ function Home() {
 export default Home ;
 
 /* <div className='card'>
-    <h1>Titulo do filmes</h1>
+    <h1>Titulo do Filmes</h1>
     <img src="/" alt="" />
     <div className='tag'>
 
