@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import infos from '../../contato.json'
 
+
 function Blog(){
+    const [name, setName]= useState('')
+    const [email, setEmail]= useState('')
+    const [message, setMessage]= useState('')
+    
+    
     return (
         <section className="pt-6 pb-6 bg-primary-claro">
             <div className="max-w-screen-xl mx-auto">
@@ -25,7 +32,34 @@ function Blog(){
                         ))
                     } 
                 </ul>
-            </div>
+            </div> 
+            <div className='w-85 h-xl bg-primary-ocre mt-5 ml-20 mr-20 mb-5 rounded-lg grid grid-cols item-center'>
+                <h1 className='mt-5 mb-10 text-primary-claro text-xl font-extrabold sm:text-xl mx-auto text-center '>Envie uma mensagem para seus contatos!</h1>
+                <form className='form  mx-auto ' onSubmit={() => {}}>
+                    
+                    <div className='mt-5 mb-3'>
+                    <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
+                      <input type="text" placeholder='Digite seu nome' onChange={(e) => setName(e.target.value)} value={name} className='items-center mx-5 rounded-lg h-8 '/>  
+                    </div>
+                    <div className='mt-5 mb-3'>
+                    <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
+                     <input type="text" placeholder='Digite seu email' onChange={(e) => setEmail(e.target.value)} value={email} className='items-center mx-5 rounded-lg h-8 ' />   
+                    </div>
+                    <div className='mt-5 mb-3'>
+                    <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
+                     <input type="text" placeholder='Digite sua mensagem' onChange={(e) => setMessage(e.target.value)} value={message} className='items-center mx-5 rounded-lg h-8 ' />  
+                    </div>
+                    <div className='mt-5 mb-3'>
+                     <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
+                      <textarea className='textarea rounded-lg mx-5 'placeholder='Digite sua mensagem' onChange={(e) => setMessage(e.target.value)} value={message}></textarea>  
+                    </div>
+                    
+                    
+                    
+
+                </form>
+                
+            </div> 
 
             <footer className="bg-primary-ocre max-w-screen-xl  shadow dark:bg-gray-900 ">
     <div className="w-full max-w-screen-xl  p-4 md:py-8">
@@ -50,6 +84,9 @@ function Blog(){
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-white sm:text-center dark:text-white">© 2024 <a href="https://flowbite.com/" className="hover:underline">KumaMovie™</a>. All Rights Reserved.</span>
     </div>
+
+                
+
 </footer>
 
         </section>

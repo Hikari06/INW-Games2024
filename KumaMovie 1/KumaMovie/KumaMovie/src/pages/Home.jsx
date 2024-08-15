@@ -44,13 +44,13 @@ function Home() {
                     {data.map((Filmes, index) => (
                         <div 
                             key={index}
-                            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentFilmIndex ? 'opacity-100' : 'opacity-0'}`}
+                            className={`h-80 absolute inset-0 transition-opacity duration-1000 ${index === currentFilmIndex ? 'opacity-100' : 'opacity-0'}`}
                             style={{ backgroundImage: `url(${Filmes.banner})` }}
                         >
                             
                             {/* Optional: Add content on top of the image */}
                             <div className=''>  
-                                <img src="../../public/Rectangle 25.png" alt="" />
+                                <img src="../../public/Rectangle 25.png" className='h-90' alt="" />
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className='h-15 w-7 absolute left-20'><h2 className="text-primary-ocre font-bold text-4xl text-alight-center text-wrap flex-row">{Filmes.title}</h2></div>
                             </div>
