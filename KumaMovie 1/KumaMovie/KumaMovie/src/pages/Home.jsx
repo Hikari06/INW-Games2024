@@ -76,26 +76,26 @@ function Home() {
 
             <div className='grid grid-cols-5 gap-5 mt-10'>
                 {
-                    data.map( (Filmes, index) => (
+                    data.map( (filmes, index) => (
                         <div key={index}>
                             <div className='card flex flex-col  justify-center items-center relative mr-5 ml-5  h-90 w-50 overflow-hidden sm:aspect-h-10 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-100'>
-                                
-                                <div style={{backgroundImage: `url(${Filmes.image})`}} src={Filmes.image} alt={Filmes.title} className=" h-80 group mt-4 w-full rounded-md bg-cover bg-center shadow-lg cursor-pointer">
+
+                                <div style={{backgroundImage: `url(${filmes.image})`}} src={filmes.image} alt={filmes.title} className=" h-80 group mt-4 w-full rounded-md bg-cover bg-center shadow-lg cursor-pointer">
                                 <div className="flex flex-col-reverse  bg-black justify-center bg-opacity-0 p-4 w-full h-full hover:bg-gradient-to-b from-transparent to-primary-ocre  transition-all duration-1000 text-white">
                                     <Link to='sobre'  className="mt-60 flex flex-col justify-center mr-5 ml-3 h-8 w-40 rounded-xl wrounded-xl bg-primary-ocre text-white opacity-0 group-hover:opacity-100" style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}>
                                     <div className='text-center'>Assista Agora<div/></div></Link> 
                                     <div></div>
-                                                
+
                                 </div>
-                                
+
                             </div>                            
-                                <h2 className='absolute right-60 text-wrap text-center text-sm font-bold text-primary-ocre'>{Filmes.title}</h2>
+                                <h2 className='absolute right-60 text-wrap text-center text-sm font-bold text-primary-ocre'>{filmes.title}</h2>
                             <div className='tags my-2'>
-                                {Filmes.tags.map( (tag, index) => (
+                                {filmes.tags.map( (tag, index) => (
                                     <span className="bg-primary-ocre p-1 my-1 mr-1 ml-1 rounded-xl" key={index}>{tag}</span>
                                 ))}
                                 </div>
-                                
+
 
 <div className="flex items-center">
     <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">

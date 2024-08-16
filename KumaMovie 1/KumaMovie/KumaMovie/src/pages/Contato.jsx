@@ -1,5 +1,8 @@
-import { useState } from 'react';
 import infos from '../../contato.json'
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import './/..//..//src/App';
+
 
 
 function Blog(){
@@ -7,14 +10,39 @@ function Blog(){
     const [email, setEmail]= useState('')
     const [message, setMessage]= useState('')
     
-    
+    function sendEmail(e){
+        e.PreventDefault();
+        if(name === ''|| email === ''|| message === '' ){
+            alert("Preencha todos os campos!!!");
+            return;
+        }
+            const templateParams ={
+                from_name: name,
+                message: message,
+                email: email,
+            }
+
+            emailjs.send("service_z1h0tyj", "template_8coedwj", templateParams, "V32Q3cwHOxiQ2_l3k")
+            .then((response) => {
+                console.log("EMAIL ENVIADO", response.status, response.text)
+                setEmail('')
+                setMessage('')
+                setName('')
+            }, (err) => {
+                console.log("ERRO: ", err)
+            })
+        
+        alert("Teste")
+
+    }
+
     return (
         <section className="pt-6 pb-6 bg-primary-claro">
             <div className="max-w-screen-xl mx-auto">
                 <div className="space-y-5 sm:text-center sm:max-w-md sm:mx-auto">
                     <h1 className="text-primary-ocre text-3xl font-extrabold sm:text-4xl">Seus Contatos</h1>
                 </div>
-            
+
                 <ul className="grid gap-x-8 gap-y-10 pt-8 w-full">
                     {
                         infos.map((items, key) => (
@@ -32,35 +60,32 @@ function Blog(){
                         ))
                     } 
                 </ul>
-            </div> 
-            <div className='w-85 h-xl bg-primary-ocre mt-5 ml-20 mr-20 mb-5 rounded-lg grid grid-cols item-center'>
-                <h1 className='mt-5 mb-10 text-primary-claro text-xl font-extrabold sm:text-xl mx-auto text-center '>Envie uma mensagem para seus contatos!</h1>
-                <form className='form  mx-auto ' onSubmit={() => {}}>
+
+
+                <div className='w-50 h-xl bg-primary-ocre mt-5 ml-20 mr-20 mb-5 rounded-lg grid grid-cols item-center'>
+                <h1 className='mt-5  text-primary-claro text-xl font-extrabold sm:text-xl mx-auto text-center '>Receba Atualizações!</h1>
+                <form className='form  mx-auto ' onSubmit={sendEmail}>
                     
                     <div className='mt-5 mb-3'>
-                    <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
+                    <h1 className="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</h1>
                       <input type="text" placeholder='Digite seu nome' onChange={(e) => setName(e.target.value)} value={name} className='items-center mx-5 rounded-lg h-8 '/>  
                     </div>
                     <div className='mt-5 mb-3'>
-                    <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
+                    <h1 className="block mb-1 ml-5 font-medium text-primary-claro">Seu email</h1>
                      <input type="text" placeholder='Digite seu email' onChange={(e) => setEmail(e.target.value)} value={email} className='items-center mx-5 rounded-lg h-8 ' />   
                     </div>
                     <div className='mt-5 mb-3'>
-                    <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
-                     <input type="text" placeholder='Digite sua mensagem' onChange={(e) => setMessage(e.target.value)} value={message} className='items-center mx-5 rounded-lg h-8 ' />  
-                    </div>
-                    <div className='mt-5 mb-3'>
-                     <label for="email" class="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</label>
+                     <h1 className="block mb-1 ml-5 font-medium text-primary-claro">Sua mensagem</h1>
                       <textarea className='textarea rounded-lg mx-5 'placeholder='Digite sua mensagem' onChange={(e) => setMessage(e.target.value)} value={message}></textarea>  
                     </div>
                     
-                    
-                    
+                    <div className='bg-primary-claro rounded-xl h-10 mt-6 mb-5 '>
+                    <input className="button block mb-1 ml-5 font-medium text-primary-ocre text-center" type="submit" value="Enviar" />
+                    </div>
 
                 </form>
-                
-            </div> 
-
+                </div>
+            </div>
             <footer className="bg-primary-ocre max-w-screen-xl  shadow dark:bg-gray-900 ">
     <div className="w-full max-w-screen-xl  p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
@@ -84,9 +109,6 @@ function Blog(){
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-white sm:text-center dark:text-white">© 2024 <a href="https://flowbite.com/" className="hover:underline">KumaMovie™</a>. All Rights Reserved.</span>
     </div>
-
-                
-
 </footer>
 
         </section>
