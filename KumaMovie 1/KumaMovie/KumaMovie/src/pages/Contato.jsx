@@ -1,117 +1,72 @@
-import infos from '../../contato.json'
-import { useState } from 'react';
+import { useState } from "react";
 import emailjs from '@emailjs/browser';
-import './/..//..//src/App';
 
+function Contato() {
 
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [mensagem, setMensagem] = useState('');
 
-function Blog(){
-    const [name, setName]= useState('')
-    const [email, setEmail]= useState('')
-    const [message, setMessage]= useState('')
-    
-    function sendEmail(e){
-        e.PreventDefault();
-        if(name === ''|| email === ''|| message === '' ){
-            alert("Preencha todos os campos!!!");
+    function sendEmail(e) {
+        e.preventDefault();
+        if(nome === '' || email === '' || mensagem === '') {
+            alert("Preencha todos os campos!");
             return;
         }
-            const templateParams ={
-                from_name: name,
-                message: message,
-                email: email,
-            }
 
-            emailjs.send("service_z1h0tyj", "template_8coedwj", templateParams, "V32Q3cwHOxiQ2_l3k")
-            .then((response) => {
-                console.log("EMAIL ENVIADO", response.status, response.text)
-                setEmail('')
-                setMessage('')
-                setName('')
-            }, (err) => {
-                console.log("ERRO: ", err)
-            })
-        
-        alert("Teste")
-
+        const templateParams = {
+            from_name: nome,
+            message: mensagem,
+            email: email
+        }
+        emailjs.send("service_wnnigsh", "template_8gfroqv", templateParams,"pqbkPJYR1NxJTqy-q")
+        .then((response) => {
+            console.log('Enviado com sucesso', response.status, response.text);
+            setNome('');
+            setEmail('');
+            setMensagem('');
+        }, (error) => {
+            console.log('Erro ao enviar', error);
+        })
     }
 
-    return (
-        <section className="pt-6 pb-6 bg-primary-claro">
-            <div className="max-w-screen-xl mx-auto">
-                <div className="space-y-5 sm:text-center sm:max-w-md sm:mx-auto">
-                    <h1 className="text-primary-ocre text-3xl font-extrabold sm:text-4xl">Seus Contatos</h1>
+    return ( 
+        <div className="flex justify-center m-5">
+            <form className="flex flex-col w-2/4 dark:text-white" onSubmit={sendEmail}>
+                <label htmlFor="nome">Nome:</label>
+                <input 
+                    className="mb-4 p-2 dark:text-black shadow-md rounded-md" 
+                    type="text" 
+                    name="Nome" 
+                    id="nome"
+                    value={nome}
+                    onChange={(e) => setNome(e.target.value)}
+                    />
+                <label htmlFor="email">E-mail:</label>
+                <input 
+                    className="mb-4 p-2 dark:text-black shadow-md rounded-md" 
+                    type="text" 
+                    name="Email" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    id="email" />
+                <label htmlFor="mensagem">Mensagem:</label>
+                <textarea 
+                    name="Mensagem" 
+                    id="mensagem"
+                    value={mensagem}
+                    className="dark:text-black p-2 rounded-md shadow-md"
+                    onChange={(e) => setMensagem(e.target.value)}
+                    />
+                <div className="flex justify-center">
+                <button 
+                    className="mt-5 shadow-md w-1/4 text-center p-3 dark:bg-white text-black" 
+                    value="Enviar"
+                    type="submit">Enviar</button>
                 </div>
-
-                <ul className="grid gap-x-8 gap-y-10 pt-8 w-full">
-                    {
-                        infos.map((items, key) => (
-                            <li className="w-full mx-auto group " key={key}>
-                                <a href={items.href}>
-                                    <img src='../../Usuario.png' className="w-10 rounded-lg" />
-                                    <div className="mt-3 space-y-2">
-                                        <span className="block font-extrabold text-primary-ocre text-sm">{items.nome}</span>
-                                        <h3 className="text-lg  text-gray-800 duration-150 group-hover:text-primary-ocre font-semibold">{items.status}   </h3>
-                                        <p className="text-primary-ocre text-sm duration-150 group-hover:text-gray-800">{items.total}</p>
-                                        <hr className='bg-primary-ocre' />
-                                    </div>
-                                </a>
-                            </li>
-                        ))
-                    } 
-                </ul>
-
-
-                <div className='w-50 h-xl bg-primary-ocre mt-5 ml-20 mr-20 mb-5 rounded-lg grid grid-cols item-center'>
-                <h1 className='mt-5  text-primary-claro text-xl font-extrabold sm:text-xl mx-auto text-center '>Receba Atualizações!</h1>
-                <form className='form  mx-auto ' onSubmit={sendEmail}>
-                    
-                    <div className='mt-5 mb-3'>
-                    <h1 className="block mb-1 ml-5 font-medium text-primary-claro">Seu Nome</h1>
-                      <input type="text" placeholder='Digite seu nome' onChange={(e) => setName(e.target.value)} value={name} className='items-center mx-5 rounded-lg h-8 '/>  
-                    </div>
-                    <div className='mt-5 mb-3'>
-                    <h1 className="block mb-1 ml-5 font-medium text-primary-claro">Seu email</h1>
-                     <input type="text" placeholder='Digite seu email' onChange={(e) => setEmail(e.target.value)} value={email} className='items-center mx-5 rounded-lg h-8 ' />   
-                    </div>
-                    <div className='mt-5 mb-3'>
-                     <h1 className="block mb-1 ml-5 font-medium text-primary-claro">Sua mensagem</h1>
-                      <textarea className='textarea rounded-lg mx-5 'placeholder='Digite sua mensagem' onChange={(e) => setMessage(e.target.value)} value={message}></textarea>  
-                    </div>
-                    
-                    <div className='bg-primary-claro rounded-xl h-10 mt-6 mb-5 '>
-                    <input className="button block mb-1 ml-5 font-medium text-primary-ocre text-center" type="submit" value="Enviar" />
-                    </div>
-
-                </form>
-                </div>
-            </div>
-            <footer className="bg-primary-ocre max-w-screen-xl  shadow dark:bg-gray-900 ">
-    <div className="w-full max-w-screen-xl  p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-                <img src="../../KumaMovieLogo.png" className="h-20 mr-5 ml-5" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">KumaMovie</span>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline">Contact</a>
-                </li>
-            </ul>
+            </form>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-white sm:text-center dark:text-white">© 2024 <a href="https://flowbite.com/" className="hover:underline">KumaMovie™</a>. All Rights Reserved.</span>
-    </div>
-</footer>
-
-        </section>
-    )
+    );
 }
-export default Blog;
+
+export default Contato;

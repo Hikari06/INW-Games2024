@@ -1,17 +1,12 @@
 import {Link} from 'react-router-dom'
+import Placeholder from '../Placeholder/Placeholder';
 
 function Navbar() {
     return ( 
         <nav>
             <ul className='flex grid-cols-1 gap-10'>
                 <Link to ="/"><img  src="../../KumaMovieLogo.png" className='w-20 mt-5 mb-5 mr-5 ml-5' alt="" /></Link>
-                <input
-                type="search"
-                id="default-search"
-                className=" w-xl  h-10 p-4 ps-10 mt-5 mb-5 mr-5 ml-5 text-sm text-primary-claro border border-primary-ocre rounded-full bg-white "
-                placeholder="Search Mockups, Logos..."
-                required
-                />
+                <Placeholder/>
                 <li className='mt-5 mb-5 mr-5 ml-5'><Link to ="/"> Home</Link></li>
                 <li className='mt-5 mb-5 mr-5 ml-5'><Link to ="filmes"> Filmes </Link></li>
                 <li className='mt-5 mb-5 mr-5 ml-5'><Link to ="blog"> Blog </Link></li>

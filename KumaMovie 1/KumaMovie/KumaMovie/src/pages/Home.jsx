@@ -1,6 +1,8 @@
-import data from '../../articles.json'
+import data from '../../articles.json';
 import {Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
+
 
 function Home() {
     console.log(data)
@@ -21,7 +23,7 @@ function Home() {
         setCurrentFilmIndex((prevIndex) => (prevIndex + 1) % data.length);
     };
 
-    const [Filmes, setFilmes] = useState([])
+    const [filmes, setFilmes] = useState([])
 
     useEffect( () => {
 
@@ -37,7 +39,8 @@ function Home() {
         
 
         <main className='bg-primary-claro'>
-
+    
+    
             <div className="relative w-full h-96 overflow-hidden rounded-lg"> 
                 
                 <div className="absolute inset-0 flex items-center justify-center">

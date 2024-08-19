@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom';
+import Placeholder from "../componentes/Placeholder/Placeholder";
 
 function Filmes() {
 
@@ -22,6 +23,7 @@ function Filmes() {
     return ( 
 
         <main className="bg-primary-claro">
+            <Placeholder/>
         <div className="listaFilmes  grid-cols-5 gap-5  flex flex-row flex-wrap justify-center bg-primary-claro"> 
             {
                 filmes.map(
