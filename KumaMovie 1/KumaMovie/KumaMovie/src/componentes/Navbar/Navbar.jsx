@@ -6,7 +6,7 @@ function Navbar() {
         <nav>
             <ul className='flex grid-cols-1 gap-10'>
                 <Link to ="/"><img  src="../../KumaMovieLogo.png" className='w-20 mt-5 mb-5 mr-5 ml-5' alt="" /></Link>
-                <Placeholder/>
+                
                 <li className='mt-5 mb-5 mr-5 ml-5'><Link to ="/"> Home</Link></li>
                 <li className='mt-5 mb-5 mr-5 ml-5'><Link to ="filmes"> Filmes </Link></li>
                 <li className='mt-5 mb-5 mr-5 ml-5'><Link to ="blog"> Blog </Link></li>
