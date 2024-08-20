@@ -85,9 +85,9 @@ function Home() {
 
                                 <div style={{backgroundImage: `url(${filmes.image})`}} src={filmes.image} alt={filmes.title} className=" h-80 group mt-4 w-full rounded-md bg-cover bg-center shadow-lg cursor-pointer">
                                 <div className="flex flex-col-reverse  bg-black justify-center bg-opacity-0 p-4 w-full h-full hover:bg-gradient-to-b from-transparent to-primary-ocre  transition-all duration-1000 text-white">
-                                    <Link to='sobre'  className="mt-60 flex flex-col justify-center mr-5 ml-3 h-8 w-40 rounded-xl wrounded-xl bg-primary-ocre text-white opacity-0 group-hover:opacity-100" style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}>
-                                    <div className='text-center'>Assista Agora<div/></div></Link> 
-                                    <div></div>
+                                    <Link to='sobre'  className="mt-60  item-center mr-5 ml-0 h-8 w-40 rounded-xl wrounded-xl bg-primary-ocre text-white opacity-0 group-hover:opacity-100" style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}>
+                                    <div className='text-center'>Assista Agora<div/></div>
+                                    </Link> 
 
                                 </div>
 
